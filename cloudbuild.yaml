@@ -4,6 +4,6 @@ steps:
   - package
 artifacts:
   objects:
-    location: "gs://fala-cloudbuild-template/"
+    location: "gs://${_BUCKET}/"
     paths:
-    - "target/template"
+    - "target/${_TARGET}"
